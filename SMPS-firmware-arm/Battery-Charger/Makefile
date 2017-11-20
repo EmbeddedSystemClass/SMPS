@@ -24,7 +24,6 @@ FREERTOS_DEV	= $(FREERTOS_DIR)/Source/portable/GCC/ARM_CM3
 FREERTOS_INC	= $(FREERTOS_DIR)/Source/include
 FREERTOS_SRC	= $(FREERTOS_DIR)/Source
 FREERTOS_MMG	= $(FREERTOS_DIR)/Source/portable/MemMang
-FATFSDIR        = ../chan-fat-stm32-loc3
 
 VPATH      += $(FREERTOS_SRC)/ $(FREERTOS_DEV)/ $(FREERTOS_MMG) $(FATFSDIR)
 
