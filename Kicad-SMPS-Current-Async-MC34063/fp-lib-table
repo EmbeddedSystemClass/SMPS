@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name smps-current-source)(type KiCad)(uri "$(KIPRJMOD)/modules/smps-current-source.pretty")(options "")(descr ""))
+)

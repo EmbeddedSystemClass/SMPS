@@ -1,0 +1,400 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:MC34063
+LIBS:led-driver-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MC34063 U1
+U 1 1 5A0F8880
+P 5150 3150
+F 0 "U1" H 4850 3500 60  0000 L CNN
+F 1 "MC34063" H 4850 2900 60  0000 L CNN
+F 2 "smps-current-source:DCT(R-PDSO-G8)" H 5050 3150 60  0001 C CNN
+F 3 "" H 5050 3150 60  0000 C CNN
+	1    5150 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C3
+U 1 1 5A0F88FF
+P 6950 3300
+F 0 "C3" H 6975 3400 50  0000 L CNN
+F 1 "CP" H 6975 3200 50  0000 L CNN
+F 2 "smps-current-source:SM1206POL" H 6988 3150 50  0001 C CNN
+F 3 "" H 6950 3300 50  0001 C CNN
+	1    6950 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C1
+U 1 1 5A0F899C
+P 3800 3300
+F 0 "C1" H 3825 3400 50  0000 L CNN
+F 1 "CP" H 3825 3200 50  0000 L CNN
+F 2 "smps-current-source:SM1206POL" H 3838 3150 50  0001 C CNN
+F 3 "" H 3800 3300 50  0001 C CNN
+	1    3800 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Schottky_ALT D1
+U 1 1 5A0F8AD7
+P 3500 2950
+F 0 "D1" H 3500 3050 50  0000 C CNN
+F 1 "CUS15S30" H 3500 2800 50  0000 C CNN
+F 2 "smps-current-source:SOD-323" H 3500 2950 50  0001 C CNN
+F 3 "" H 3500 2950 50  0001 C CNN
+	1    3500 2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L L L1
+U 1 1 5A0F8B70
+P 6700 3050
+F 0 "L1" V 6650 3050 50  0000 C CNN
+F 1 "L" V 6775 3050 50  0000 C CNN
+F 2 "smps-current-source:L_Radial_D7.8mm_P5.00mm_Fastron_07HCP" H 6700 3050 50  0001 C CNN
+F 3 "" H 6700 3050 50  0001 C CNN
+	1    6700 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 5A0F8C38
+P 4250 3050
+F 0 "R1" V 4100 3050 50  0000 C CNN
+F 1 "R" V 4250 3050 50  0000 C CNN
+F 2 "smps-current-source:SM0603_Resistor" V 4180 3050 50  0001 C CNN
+F 3 "" H 4250 3050 50  0001 C CNN
+	1    4250 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 5A0F8C8D
+P 5300 4650
+F 0 "R4" V 5400 4650 50  0000 C CNN
+F 1 "R" V 5300 4650 50  0000 C CNN
+F 2 "smps-current-source:SM0603_Resistor" V 5230 4650 50  0001 C CNN
+F 3 "" H 5300 4650 50  0001 C CNN
+	1    5300 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 5A0F8D18
+P 4550 4250
+F 0 "R2" H 4650 4100 50  0000 C CNN
+F 1 "R" V 4550 4250 50  0000 C CNN
+F 2 "smps-current-source:SM0603_Resistor" V 4480 4250 50  0001 C CNN
+F 3 "" H 4550 4250 50  0001 C CNN
+	1    4550 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5A0F8D95
+P 6100 3800
+F 0 "R3" V 6200 3700 50  0000 C CNN
+F 1 "R" V 6100 3800 50  0000 C CNN
+F 2 "smps-current-source:SM0603_Resistor" V 6030 3800 50  0001 C CNN
+F 3 "" H 6100 3800 50  0001 C CNN
+	1    6100 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L R R5
+U 1 1 5A0F8E22
+P 7300 4250
+F 0 "R5" H 7450 4100 50  0000 C CNN
+F 1 "R" V 7300 4250 50  0000 C CNN
+F 2 "smps-current-source:SM0603_Resistor" V 7230 4250 50  0001 C CNN
+F 3 "" H 7300 4250 50  0001 C CNN
+	1    7300 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR01
+U 1 1 5A0F93F0
+P 5700 3450
+F 0 "#PWR01" H 5700 3200 50  0001 C CNN
+F 1 "Earth" H 5700 3300 50  0001 C CNN
+F 2 "" H 5700 3450 50  0001 C CNN
+F 3 "" H 5700 3450 50  0001 C CNN
+	1    5700 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Barrel_Jack J1
+U 1 1 5A0F9E4B
+P 3050 3050
+F 0 "J1" H 3050 3260 50  0000 C CNN
+F 1 "Input 12V-30V" H 3100 2750 50  0000 C CNN
+F 2 "smps-current-source:BARREL_JACK" H 3100 3010 50  0001 C CNN
+F 3 "" H 3100 3010 50  0001 C CNN
+	1    3050 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR02
+U 1 1 5A0FA07F
+P 3350 3150
+F 0 "#PWR02" H 3350 2900 50  0001 C CNN
+F 1 "Earth" H 3350 3000 50  0001 C CNN
+F 2 "" H 3350 3150 50  0001 C CNN
+F 3 "" H 3350 3150 50  0001 C CNN
+	1    3350 3150
+	1    0    0    -1  
+$EndComp
+Text Label 4550 3150 2    60   ~ 0
+Vcc
+Text Label 3800 2950 1    60   ~ 0
+Vcc
+Text Label 4950 3800 1    60   ~ 0
+Vcc
+$Comp
+L Earth #PWR03
+U 1 1 5A0FA53A
+P 4950 4400
+F 0 "#PWR03" H 4950 4150 50  0001 C CNN
+F 1 "Earth" H 4950 4250 50  0001 C CNN
+F 2 "" H 4950 4400 50  0001 C CNN
+F 3 "" H 4950 4400 50  0001 C CNN
+	1    4950 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR04
+U 1 1 5A0FA893
+P 3800 3450
+F 0 "#PWR04" H 3800 3200 50  0001 C CNN
+F 1 "Earth" H 3800 3300 50  0001 C CNN
+F 2 "" H 3800 3450 50  0001 C CNN
+F 3 "" H 3800 3450 50  0001 C CNN
+	1    3800 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Schottky_ALT D2
+U 1 1 5A0FB987
+P 6400 3300
+F 0 "D2" V 6400 3400 50  0000 C CNN
+F 1 "CUS15S30" V 6750 3300 50  0000 C CNN
+F 2 "smps-current-source:SOD-323" H 6400 3300 50  0001 C CNN
+F 3 "" H 6400 3300 50  0001 C CNN
+	1    6400 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Earth #PWR05
+U 1 1 5A0FBD9B
+P 6400 3450
+F 0 "#PWR05" H 6400 3200 50  0001 C CNN
+F 1 "Earth" H 6400 3300 50  0001 C CNN
+F 2 "" H 6400 3450 50  0001 C CNN
+F 3 "" H 6400 3450 50  0001 C CNN
+	1    6400 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3150 6000 3150
+Wire Wire Line
+	5700 3450 5700 3250
+Wire Wire Line
+	3350 3050 3350 3150
+Wire Wire Line
+	3650 2950 3800 2950
+Wire Wire Line
+	3800 2950 4100 2950
+Wire Wire Line
+	4100 2950 4550 2950
+Wire Wire Line
+	4550 2950 4550 2950
+Wire Wire Line
+	4550 3250 4550 3550
+Wire Wire Line
+	4550 3550 4550 4100
+Wire Wire Line
+	3800 2950 3800 3150
+Connection ~ 4550 2950
+Wire Wire Line
+	5700 3050 6400 3050
+Wire Wire Line
+	6400 3050 6550 3050
+Wire Wire Line
+	6400 3150 6400 3050
+Connection ~ 6400 3050
+$Comp
+L Conn_01x02 J2
+U 1 1 5A0FC816
+P 7500 3050
+F 0 "J2" H 7500 3150 50  0000 C CNN
+F 1 "Output" H 7500 2850 50  0000 C CNN
+F 2 "smps-current-source:PINHEAD1-2" H 7500 3050 50  0001 C CNN
+F 3 "" H 7500 3050 50  0001 C CNN
+	1    7500 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 3050 6950 3050
+Wire Wire Line
+	6950 3050 7200 3050
+Wire Wire Line
+	7200 3050 7300 3050
+$Comp
+L Earth #PWR06
+U 1 1 5A0FC9CA
+P 6950 3450
+F 0 "#PWR06" H 6950 3200 50  0001 C CNN
+F 1 "Earth" H 6950 3300 50  0001 C CNN
+F 2 "" H 6950 3450 50  0001 C CNN
+F 3 "" H 6950 3450 50  0001 C CNN
+	1    6950 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3150 6950 3050
+Connection ~ 6950 3050
+Wire Wire Line
+	7300 3150 7300 4000
+Wire Wire Line
+	7300 4000 7300 4100
+$Comp
+L Earth #PWR07
+U 1 1 5A0FD6DD
+P 7300 4400
+F 0 "#PWR07" H 7300 4150 50  0001 C CNN
+F 1 "Earth" H 7300 4250 50  0001 C CNN
+F 2 "" H 7300 4400 50  0001 C CNN
+F 3 "" H 7300 4400 50  0001 C CNN
+	1    7300 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 4400 4550 4650
+Wire Wire Line
+	4550 4650 5150 4650
+$Comp
+L Earth #PWR08
+U 1 1 5A0FDBC4
+P 5450 4650
+F 0 "#PWR08" H 5450 4400 50  0001 C CNN
+F 1 "Earth" H 5450 4500 50  0001 C CNN
+F 2 "" H 5450 4650 50  0001 C CNN
+F 3 "" H 5450 4650 50  0001 C CNN
+	1    5450 4650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5150 4650 5150 4200
+Wire Wire Line
+	5150 4000 7300 4000
+Connection ~ 7300 4000
+Connection ~ 4550 3550
+$Comp
+L LM321 U2
+U 1 1 5A0F7DDC
+P 4850 4100
+F 0 "U2" H 4950 4400 50  0000 L CNN
+F 1 "LM321" H 4850 4300 50  0000 L CNN
+F 2 "smps-current-source:SOT23-5" H 4850 4100 50  0001 C CNN
+F 3 "" H 4850 4100 50  0001 C CNN
+	1    4850 4100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 2700 5700 2950
+Wire Wire Line
+	4550 2700 5700 2700
+Connection ~ 4100 2950
+Text Notes 7450 7500 0    60   ~ 0
+LED Driver Low Power 1.5A
+Text Notes 8300 7650 0    60   ~ 0
+20 November 2017
+Wire Wire Line
+	5950 3800 5350 3800
+Wire Wire Line
+	5350 3800 5350 3550
+Wire Wire Line
+	5350 3550 4550 3550
+Wire Wire Line
+	6250 3800 7200 3800
+Wire Wire Line
+	7200 3800 7200 3050
+Connection ~ 7200 3050
+Text Notes 3900 5050 0    60   ~ 0
+For constant current leave out R3.\nFor constant voltage, leave out U2 and R5 and short out R4. R2 and R3 form the divider.
+$Comp
+L C C2
+U 1 1 5A126154
+P 6000 3300
+F 0 "C2" H 6025 3400 50  0000 L CNN
+F 1 "C" H 6025 3200 50  0000 L CNN
+F 2 "smps-current-source:SM0603_Capa" H 6038 3150 50  0001 C CNN
+F 3 "" H 6000 3300 50  0001 C CNN
+	1    6000 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR09
+U 1 1 5A12615A
+P 6000 3450
+F 0 "#PWR09" H 6000 3200 50  0001 C CNN
+F 1 "Earth" H 6000 3300 50  0001 C CNN
+F 2 "" H 6000 3450 50  0001 C CNN
+F 3 "" H 6000 3450 50  0001 C CNN
+	1    6000 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 2950 4550 2700
+Wire Wire Line
+	4100 3050 4100 2950
+Connection ~ 3800 2950
+Wire Wire Line
+	4550 3050 4400 3050
+$EndSCHEMATC
