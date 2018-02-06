@@ -72,12 +72,12 @@ $EndComp
 $Comp
 L CP C1
 U 1 1 5A0F899C
-P 3800 3300
-F 0 "C1" H 3825 3400 50  0000 L CNN
-F 1 "CP" H 3825 3200 50  0000 L CNN
-F 2 "smps-current-source:RADIAL_TABBED_2.5mm_6.3mm" H 3838 3150 50  0001 C CNN
-F 3 "" H 3800 3300 50  0001 C CNN
-	1    3800 3300
+P 3700 3300
+F 0 "C1" H 3725 3400 50  0000 L CNN
+F 1 "CP" H 3725 3200 50  0000 L CNN
+F 2 "smps-current-source:RADIAL_TABBED_2.5mm_6.3mm" H 3738 3150 50  0001 C CNN
+F 3 "" H 3700 3300 50  0001 C CNN
+	1    3700 3300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -85,7 +85,7 @@ L D_Schottky_ALT D1
 U 1 1 5A0F8AD7
 P 3500 2950
 F 0 "D1" H 3500 3050 50  0000 C CNN
-F 1 "CUS15S30" H 3500 2800 50  0000 C CNN
+F 1 "CUS15S30" H 3550 2800 50  0000 C CNN
 F 2 "smps-current-source:SOD-323" H 3500 2950 50  0001 C CNN
 F 3 "" H 3500 2950 50  0001 C CNN
 	1    3500 2950
@@ -105,12 +105,12 @@ $EndComp
 $Comp
 L R R1
 U 1 1 5A0F8C38
-P 4250 3050
-F 0 "R1" V 4100 3050 50  0000 C CNN
-F 1 "R" V 4250 3050 50  0000 C CNN
-F 2 "smps-current-source:SM0603_Resistor" V 4180 3050 50  0001 C CNN
-F 3 "" H 4250 3050 50  0001 C CNN
-	1    4250 3050
+P 4300 2950
+F 0 "R1" V 4150 2950 50  0000 C CNN
+F 1 "R" V 4300 2950 50  0000 C CNN
+F 2 "smps-current-source:SM0603_Resistor" V 4230 2950 50  0001 C CNN
+F 3 "" H 4300 2950 50  0001 C CNN
+	1    4300 2950
 	0    1    1    0   
 $EndComp
 $Comp
@@ -190,9 +190,7 @@ F 3 "" H 3350 3150 50  0001 C CNN
 	1    3350 3150
 	1    0    0    -1  
 $EndComp
-Text Label 4550 3150 2    60   ~ 0
-Vcc
-Text Label 3800 2950 1    60   ~ 0
+Text Label 3850 2950 1    60   ~ 0
 Vcc
 Text Label 4950 3800 1    60   ~ 0
 Vcc
@@ -205,17 +203,6 @@ F 1 "Earth" H 4950 4250 50  0001 C CNN
 F 2 "" H 4950 4400 50  0001 C CNN
 F 3 "" H 4950 4400 50  0001 C CNN
 	1    4950 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Earth #PWR04
-U 1 1 5A0FA893
-P 3800 3450
-F 0 "#PWR04" H 3800 3200 50  0001 C CNN
-F 1 "Earth" H 3800 3300 50  0001 C CNN
-F 2 "" H 3800 3450 50  0001 C CNN
-F 3 "" H 3800 3450 50  0001 C CNN
-	1    3800 3450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -247,11 +234,13 @@ Wire Wire Line
 Wire Wire Line
 	3350 3050 3350 3150
 Wire Wire Line
-	3650 2950 4550 2950
+	3650 2950 4150 2950
+Wire Wire Line
+	4450 3050 4550 3050
 Wire Wire Line
 	4550 3250 4550 4100
 Wire Wire Line
-	3800 2950 3800 3150
+	3700 2950 3700 3150
 Connection ~ 4550 2950
 Wire Wire Line
 	5700 3050 6550 3050
@@ -334,7 +323,6 @@ Wire Wire Line
 	5700 2700 5700 2950
 Wire Wire Line
 	4550 2700 5700 2700
-Connection ~ 4100 2950
 Text Notes 7450 7500 0    60   ~ 0
 LED Driver Low Power 1.5A
 Text Notes 8300 7650 0    60   ~ 0
@@ -350,8 +338,8 @@ Wire Wire Line
 Wire Wire Line
 	7200 3800 7200 3050
 Connection ~ 7200 3050
-Text Notes 3900 5050 0    60   ~ 0
-For constant current leave out R3.\nFor constant voltage, leave out U2 and R5 and short out R4. R2 and R3 form the divider.
+Text Notes 3100 5050 0    60   ~ 0
+For constant current leave out R3.\nFor constant voltage, leave out U2 and short out R4 and R5. R2 and R3 form the divider.
 $Comp
 L C C2
 U 1 1 5A126154
@@ -376,12 +364,50 @@ F 3 "" H 6000 3450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4550 2950 4550 2700
-Wire Wire Line
-	4100 3050 4100 2950
-Connection ~ 3800 2950
-Wire Wire Line
-	4550 3050 4400 3050
+Connection ~ 3700 2950
 Connection ~ 5150 4650
+Connection ~ 4550 4100
+$Comp
+L C C4
+U 1 1 5A76A76A
+P 4000 3300
+F 0 "C4" H 4025 3400 50  0000 L CNN
+F 1 "C" H 4025 3200 50  0000 L CNN
+F 2 "smps-current-source:SM0603_Capa" H 4038 3150 50  0001 C CNN
+F 3 "" H 4000 3300 50  0001 C CNN
+	1    4000 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR?
+U 1 1 5A76A770
+P 4000 3450
+F 0 "#PWR?" H 4000 3200 50  0001 C CNN
+F 1 "Earth" H 4000 3300 50  0001 C CNN
+F 2 "" H 4000 3450 50  0001 C CNN
+F 3 "" H 4000 3450 50  0001 C CNN
+	1    4000 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3150 4000 2950
+Connection ~ 4000 2950
+Wire Wire Line
+	4550 3150 4150 3150
+Wire Wire Line
+	4150 3150 4150 2950
+Connection ~ 4150 2950
+$Comp
+L Earth #PWR04
+U 1 1 5A0FA893
+P 3700 3450
+F 0 "#PWR04" H 3700 3200 50  0001 C CNN
+F 1 "Earth" H 3700 3300 50  0001 C CNN
+F 2 "" H 3700 3450 50  0001 C CNN
+F 3 "" H 3700 3450 50  0001 C CNN
+	1    3700 3450
+	1    0    0    -1  
+$EndComp
 $Comp
 L Conn_01x01 J3
 U 1 1 5A2B45DF
@@ -404,5 +430,9 @@ F 3 "" H 3350 4000 50  0001 C CNN
 	1    3350 4000
 	1    0    0    -1  
 $EndComp
-Connection ~ 4550 4100
+Wire Wire Line
+	4450 2950 4550 2950
+Wire Wire Line
+	4450 3050 4450 2950
+Connection ~ 4450 2950
 $EndSCHEMATC
